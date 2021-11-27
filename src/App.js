@@ -1,10 +1,10 @@
-import { React } from 'react';
+import React from 'react';
+
+import Main from './pages/main';
 
 const App = () => {
   return (
-    <div className="App">
-      <p>Test</p>
-    </div>
+    <Main />
   );
 }
 
