@@ -37,6 +37,20 @@
       text-align: right;
       font-size: 52px;
       font-weight: 700;
+
+      @media screen and (min-width: $tablet-breakpoint) {
+        width: 320px;
+        padding-right: 32px;
+        
+        font-size: 72px;
+      }
+
+      @media screen and (min-width: $desktop-breakpoint) {
+        width: 480px;
+        padding-right: 48px;
+
+        font-size: 96px;
+      }
     }
 
     &__contacts {
@@ -44,6 +58,18 @@
       padding: 58px 0px 64px 12px;
 
       font-size: 12px;
+
+      @media screen and (min-width: $tablet-breakpoint) {
+        padding: 68px 90px 74px 32px;
+
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: $desktop-breakpoint) {
+        padding: 88px 148px 94px 48px;
+
+        font-size: 24px;
+      }
     }
 
     &__row {
@@ -54,10 +80,29 @@
     &__logo {
       height: 16px;
       width: 16px;
+
+      @media screen and (min-width: $tablet-breakpoint) {
+        height: 18px;
+        width: 18px;
+      }
+
+      @media screen and (min-width: $desktop-breakpoint) {
+        margin-bottom: 4px;
+        height: 24px;
+        width: 24px;
+      }
     }
 
     &__contact {
       padding: 12px 0px 0px 8px;
+
+      @media screen and (min-width: $tablet-breakpoint) {
+        padding: 12px 0px 0px 10px;
+      }
+
+      @media screen and (min-width: $desktop-breakpoint) {
+        padding: 12px 0px 0px 16px;
+      }
     }
 
   }
@@ -86,17 +131,47 @@
 
     background-color: $card;
     color: $card-text;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+      max-width: 720px;
+      padding: 12px;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+      padding: 18px;
+    }
   }
 
   &__title {
     padding-bottom: 16px;
     text-align: center;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+      font-size: 32px;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+      font-size: 48px;
+    }
   }
 
   &__text {
     padding-bottom: 8px;
+
     font-size: 13px;
     font-weight: 300;
     text-align: center;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+      padding-bottom: 12px;
+
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+      padding-bottom: 18px;
+
+      font-size: 20px;
+    }
   }
 }

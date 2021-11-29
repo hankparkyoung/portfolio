@@ -9,7 +9,7 @@ const Main = () => {
   // to-do: change certain divs to the correct semantic tags
 return (
 <div className='main'>
-  <div className='hero'>
+  <header className='hero'>
     <div className='hero__overlay'>
       <div className='hero__content'>
         <h1 className='hero__content__header'>
@@ -31,8 +31,8 @@ return (
         </div>
       </div>
     </div>
-  </div>
-  <div className='about'>
+  </header>
+  <section className='about'>
     <div className='about__overlay'>
       <div className='about__card'>
         <h2 className='about__title'>
@@ -51,10 +51,13 @@ return (
           listening to a colleague or friend and offering support and advice, I'm passionate about
           doing my best!
         </p>
-        
+        <p className='about__text'>
+          Feel free to send an email if you'd like to get in contact! This webpage is still
+          a work in progress.
+        </p>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 );
 };
