@@ -1,0 +1,17 @@
+@import './partials/_mixins.scss';
+
+.App {
+  background-image: url("./assets/hero.jpg");
+  background-size: cover;
+  background-position: 25% center;
+  @include media($tabdesk){
+    background-position: center center;
+  }
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  &__filter {
+    background-color: #FFFFFF90;
+  }
+}
